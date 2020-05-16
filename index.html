@@ -1,126 +1,405 @@
----
-Layout: Minimal
----
-
 <!DOCTYPE html>
-<html>
-<title>Samuel Matravers</title>
+<html lang="en">
+<head>
 
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="templatemo">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Sam Matravers</title>
+<!--
+Stimulus Template
+http://www.templatemo.com/tm-498-stimulus
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 
+<!-- PRE LOADER -->
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">About Me</a>
-    <a href="#Achievements" class="w3-bar-item w3-button" style="width:25% !important">Achievements</a>
-    <a href="#References" class="w3-bar-item w3-button" style="width:25% !important">References</a>
-    <a href="#Contact Me" class="w3-bar-item w3-button" style="width:25% !important">Contact Me</a>
-  </div>
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Samuel Matravers</h1>
-    <p></p>
-    <img src="https://drive.google.com/file/d/1NopnibVAgi4ZV2ERT-Gx2d7pTrWza30Y/view" alt="boy" class="w3-image" width="140" height="134">
-  </header>
-  
-  <!-- About me Section-->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="About Me">
-    <h2 class="w3-text-light-grey">About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-  <p>
-  <ul>
-  <li> I'm a twenty two year old studying undergraduate law at the University of Bristol</li>
-  <li> I am particularly interested in Information Technology Law, as well as Employment Law and Human Rights Law.</li>
-  <li> Having always been intellectually curious, I enjoy developing new skills. During my second year of studies I have begun to learn to code independently, having started with the basics of HTML and CSS.</li>
-  
 
-  <!-- Achievements Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Achievements">
-    <h2 class="w3-text-light-grey">Achievements</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>A-Levels
-    <ul>
-    <li>Economics-A*</li>
-    <li>Psychology-A</li>
-    <li>Sociology-A*</li>
-    </p>
-    <p> Gold Duke of Edinburgh
-    <li>For my Gold Duke of Edinburgh, I carried out a four day expedition in the Brecon Beacons</li>
-    <li>I also completed 12 months of a new exercise (Gym) as well as 6 months of learning a new skill (learning how to drive)</li>
-    <li>Duke of Edinburgh allowed me to enhance my leadership skills by helping guide my team through novel obstacles, as well as enable me to hone my teamworking skills.</li>
-    <li>The whole experience demonstrates my resolve, as I managed to complete the Award whilst having to start adapting to living with my disability, thus evidencing my tenacity.</li>
-    </p>
+<!-- Navigation Section -->
 
-    
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+     <div class="container">
 
+          <!-- navbar header -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="#" class="navbar-brand"></a>
+          </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-  <!-- References-->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="References">
-    <h2 class="w3-text-light-grey">References</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p><span class="w3-large w3-margin-right">Sean Brunton QC.<br></span> Barrister at Colleton Chambers</p>
-    <p></p><br>
-    
-    <p><span class="w3-large w3-margin-right">Steve Spokes.</span><br> Economics Tutor at Bridgwater College.</p>
-    <p></p>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="Contact Me">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About Me</a></li>
+                    <li><a href="#experience" class="smoothScroll">Experiences</a></li>
+                    <li><a href="#quotes" class="smoothScroll">References</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+               </ul>
+          </div>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bristol, United Kingdom</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 07584309289</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Sam@samuelmatravers.com</p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
+     </div>
 </div>
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-thumb">
+                         <div class="section-title">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to my website</h4>
+                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Samuel Matravers</strong> currently based in Bristol.</h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s">I am a penultimate year law student with a particular interest in Information Technology Law and Commercial Law.</p>
+                              
+                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
+                              
+                         </div>
+                    </div>
+               </div>
+
+
+          </div>
+     </div>
+</section>
+
+
+<!-- About Section -->
+
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                              <h1>Achievements and Experiences</h1>
+                              <p class="color-black">Letter of Commendation </p>
+                              <ul> Received a letter of commendation from my college to recognise my 'exceptional achievement and commitment to my course.' </ul>
+                              <p> AS Aspire 2019-2020 </p>
+                              <ul> Competitively selected to be part of AS Aspire, a program which gave me access to legal mentors, CV workshops and mock interviews. </ul>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <p>Gold Duke of Edinburgh</p>
+                              <ul> Completed a four day expedition in the Brecon Beacons. </ul>
+                              <p>University of Bath Social Science Summer School</p>
+                              <ul> Competitively selected to spend a week at the University of Bath to complete a program of research and critical thinking skills through relfection, analysis, synthesis and evaluation. </ul>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="skill-thumb">
+                         <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
+                              <h1>My Skills</h1>
+                              <p class="color-white">Photoshop . HTML CSS JS . Web Design</p>
+                         </div>
+
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+                         <strong>Independent Research</strong>
+                              <span class="color-white pull-right">90%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                   </div>
+
+                         <strong>Leadership</strong>
+                              <span class="color-white pull-right">70%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                   </div>
+
+                         <strong>HTML5 & CSS3</strong>
+                              <span class="color-white pull-right">80%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                   </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Service Section -->
+
+<section id="service" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                         <i class="fa fa-desktop"></i>
+                              <h3>Coding</h3>
+                              <p class="color-white">During my spare time, i have started to teach myself some basic programming, as evidenced by my website. I have dabbled in HTML, CSS and Python.</p>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                         <i class="fa fa-paper-plane"></i>
+                              <h3>Virtual Internships</h3>
+                              <p class="color-white">Due to Coronavirus affecting my internship plans, I have completed a few online internships through InsideSherpa.</p>
+                    </div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+                         <i class="fa fa-table"></i>
+                              <h3>Organisation</h3>
+                              <p class="color-white">As someone who suffers from a Chronic Illness, I have had to become meticuously organised and am now able to plan in advance whilst allowing for flexibility.</p>
+                    </div>
+               </div>
+
+               <div class="bg-white col-md-3 col-sm-6">
+                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+                         <i class="fa fa-html5"></i>
+                              <h3>Academic Curiosity</h3>
+                              <p>I am always striving to learn more, be it teaching myself to code or reading up on areas I lack knowledge.</p>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Experience Section -->
+
+<section id="experience" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image experience-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white experience-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Experiences</h1>
+                              <p class="color-white">Previous companies and my tasks</p>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Hydrotherapy Assisstant <small>May 2014- June 2015</small></h3>
+                                   <p class="color-white">I worked as a hydrotherapy assisstant for a year, a role which involved processing bookings, managing payments and ensuring the safety of the pool. as well as meeting the water safety standards.</p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Retail Assisstant <small>June 2015- September 2015</small></h3>
+                                   <p class="color-white">I worked at my local motorway services over my summer holiday in 2015, where I served customers, organised the shop floor, replenished items and processed vehicle bookings</p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Education Section -->
+
+<section id="education" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white education-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Education</h1>
+                                                   </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">LLB Law <small>September 2018- July 2021</small><div>
+                                   <small>University of Bristol</small></h3>
+                                   
+                                   <p class="color-white">Currently averaging a 2:1, expected to gain a 1st class degree in July 2021 </p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">A-Levels<small>September 2016- June 2018</small><div>
+                                   <small>Bridgwater College</small></h3>
+                                   <p class="color-white">
+                                   <ul> Economics- A* </ul>
+                                   <ul> Psychology- A </ul>
+                                   <ul> Sociology- A* </ul>
+                                   </p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image education-img"></div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Quotes Section -->
+
+<section id="quotes" class="parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.8s">
+                    <h2>'Sam has a range of leadship qualities... I have been very impressed by the growth in Sam's overall abilities, talent and determination to succeed.' </h2>
+                    </h2>
+                    <h3> Steve Spokes, Economics Lecturer at Bridgwater College </h3>
+                    <h2 class="wow fadeInUp" data-wow-delay="1s">'Sam is a brilliantly hardworking, capable indiviudal.' </h2>
+                    <h3> Sean Brunton Q.C., Mentor.</h3>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="contact-form">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                              <h2 class="color-white">Message me if you have any inquiries</h2>
+                              <p class="color-white"></p>
+                         </div>
+
+                         <div id="contact-form">
+                              <form action="#template-mo" method="post">
+                                   <div class="wow fadeInUp" data-wow-delay="1s">
+                                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.2s">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.4s">
+                                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
+                                   </div>
+                                   <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                                   </div>
+                              </form>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image contact-img"></div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="contact-thumb">
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+        
+                         </div>
+
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+                              <h3 class="color-white">Contact.</h3>
+                              <p><i class="fa fa-phone"></i> 07584309289</p>
+         <p><i class="fa fa-envelope-o"></i><a href="mailto:sammatravers@gmail.com">sammatravers</a></p>
+                              <p><i class="fa fa-globe"></i> <a href="#">samuelmatravers.co.uk</a></p>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                        
+				<ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                     <li><a href="https://www.linkedin.com/in/samuelmatravers/" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
